@@ -12,7 +12,7 @@
 /* =========================================================================
    はばたき 保護者申請フォーム（LIFF）— 単一ファイル完結
    方向性: やわらかい紙とみどり。あたたかく安心・迷わない・大きく押しやすい。
-   設計の正は FamHopper/docs/32 v3。バリデ純関数のテストは validation.test.js（21ケース）。
+   バリデ純関数のテストは validation.test.js（21ケース）。
    多角レビュー（2026-06-26）の確定赤/黄を反映済み（コントラスト・選択肢a11y・日付ガード・
    タイムアウト・状態同期・完了文言・送迎ガイド ほか）。
    ========================================================================= */
@@ -330,8 +330,8 @@ body::after{ width:300px;height:300px; bottom:-120px; left:-120px;
    ========================================================================= */
 var HABATAKI_CONFIG = {
   liffId: '2010530917-xCterfhA',
-  gasEndpoint: '',
-  gasKey: '',
+  gasEndpoint: 'https://script.google.com/macros/s/AKfycbzFsltIbenidhbhV0821sLc2xLi7iYIbhJQJM_vj6C15gRtTxU3soCGjh4FNHen0-eLYQ/exec',
+  gasKey: 'dd2f798931d14c03b255697cf0d8f13e4a5d8f372190401296b89fb51f1566a8', // LINE_WEBHOOK_TOKEN（M0・検証後にローテすること）
   classroom: '稲毛教室',
 };
 var SUBMIT_TIMEOUT_MS = 15000;
